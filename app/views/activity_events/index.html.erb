@@ -4,13 +4,36 @@
 
 <h1>Activity events</h1>
 
-<div id="activity_events">
-  <% @activity_events.each do |activity_event| %>
-    <%= render activity_event %>
-    <p>
-      <%= link_to "Show this activity event", activity_event %>
-    </p>
-  <% end %>
-</div>
+<table>
+  <thead>
+    <tr>
+      <th></th>
+      <th>Monday</th>
+      <th>Tuesday</th>
+      <th>Wednesday</th>
+      <th>Thursday</th>
+      <th>Friday</th>
+      <th>Saturday</th>
+      <th>Sunday</th>
+    </tr>
+  </thead>
+
+  <tbody>
+    <tr>
+      <td>To Do</td>
+    </tr>
+    <tr>
+      <td>In Progress</td>
+    </tr>
+    <tr>
+      <td>Done</td>
+    </tr>
+
+  </body>
+
+  <tfoot>
+  </tfoot>
+</table>
+
 
 <%= link_to "New activity event", new_activity_event_path %>
