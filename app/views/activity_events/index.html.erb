@@ -21,12 +21,96 @@
   <tbody>
     <tr>
       <td>To Do</td>
+	  <!-- Monday -->
+      <td>
+  		<% @activity_events_Mon_TD.each do |activityEvent| %>
+    		<td> <%= link_to  activityEvent.id, activityEvent %></td>
+  		<% end %>
+	  </td>
+	  <!-- Tuesday -->
+      <td>
+  		<% @activity_events_Tue_TD.each do |activityEvent| %>
+    		<td> <%= link_to  activityEvent.id, activityEvent %></td>
+  		<% end %>
+	  </td>
+	  <!-- Wednesday -->
+      <td>
+  		<% @activity_events_Wed_TD.each do |activityEvent| %>
+    		<td> <%= link_to  activityEvent.id, activityEvent %></td>
+  		<% end %>
+	  </td>
+	  <!-- Thursday -->
+      <td>
+  		<% @activity_events_Thr_TD.each do |activityEvent| %>
+    		<td> <%= link_to  activityEvent.id, activityEvent %></td>
+  		<% end %>
+	  </td>
+	  <!-- Friday -->
+      <td>
+  		<% @activity_events_Fri_TD.each do |activityEvent| %>
+    		<td> <%= link_to  activityEvent.id, activityEvent %></td>
+  		<% end %>
+	  </td>
+	  <!-- Saturday -->
+      <td>
+  		<% @activity_events_Sat_TD.each do |activityEvent| %>
+    		<td> <%= link_to  activityEvent.id, activityEvent %></td>
+  		<% end %>
+	  </td>
+	  <!-- Sunday -->
+      <td>
+  		<% @activity_events_Sun_TD.each do |activityEvent| %>
+    		<td> <%= link_to  activityEvent.id, activityEvent %>></td>
+  		<% end %>
+	  </td>
     </tr>
     <tr>
       <td>In Progress</td>
     </tr>
     <tr>
       <td>Done</td>
+	  <!-- Monday -->
+      <td>
+  		<% @activity_events_Mon_Dn.each do |activityEvent| %>
+    		<td> <%= link_to  activityEvent.id, activityEvent %></td>
+  		<% end %>
+	  </td>
+	  <!-- Tuesday -->
+      <td>
+  		<% @activity_events_Tue_Dn.each do |activityEvent| %>
+    		<td> <%= link_to  activityEvent.id, activityEvent %></td>
+  		<% end %>
+	  </td>
+	  <!-- Wednesday -->
+      <td>
+  		<% @activity_events_Wed_Dn.each do |activityEvent| %>
+    		<td> <%= link_to  activityEvent.id, activityEvent %></td>
+  		<% end %>
+	  </td>
+	  <!-- Thursday -->
+      <td>
+  		<% @activity_events_Thr_Dn.each do |activityEvent| %>
+    		<td> <%= link_to  activityEvent.id, activityEvent %></td>
+  		<% end %>
+	  </td>
+	  <!-- Friday -->
+      <td>
+  		<% @activity_events_Fri_Dn.each do |activityEvent| %>
+    		<td> <%= link_to  activityEvent.id, activityEvent %></td>
+  		<% end %>
+	  </td>
+	  <!-- Saturday -->
+      <td>
+  		<% @activity_events_Sat_Dn.each do |activityEvent| %>
+    		<td> <%= link_to  activityEvent.id, activityEvent %></td>
+  		<% end %>
+	  </td>
+	  <!-- Sunday -->
+      <td>
+  		<% @activity_events_Sun_Dn.each do |activityEvent| %>
+    		<td> <%= link_to  activityEvent.id, activityEvent %></td>
+  		<% end %>
+	  </td>
     </tr>
 
   </body>

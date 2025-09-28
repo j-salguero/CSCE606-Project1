@@ -13,32 +13,32 @@
 
   <div>
     <%= form.label :due_date, style: "display: block" %>
-    <%= form.text_field :due_date %>
+    <%= form.date_field :due_date %>
   </div>
 
   <div>
     <%= form.label :is_completed, style: "display: block" %>
-    <%= form.text_field :is_completed %>
+    <%= form.checkbox :is_completed %>
   </div>
 
   <div>
     <%= form.label :created_at, style: "display: block" %>
-    <%= form.text_field :created_at %>
+    <%= form.date_field :created_at %>
   </div>
 
   <div>
     <%= form.label :updated_at, style: "display: block" %>
-    <%= form.text_field :updated_at %>
+    <%= form.date_field :updated_at %>
   </div>
 
   <div>
     <%= form.label :user_id, style: "display: block" %>
-    <%= form.text_field :user_id %>
+	<%= form.select :user_id, @users_for_dropdown%>
   </div>
 
   <div>
     <%= form.label :activity_id, style: "display: block" %>
-    <%= form.text_field :activity_id %>
+	<%= form.select :activity_id, @activities_for_dropdown%>
   </div>
 
   <div>
