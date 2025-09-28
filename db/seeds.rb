@@ -27,3 +27,24 @@ end
 more_activity.each do |activities|
     Activity.create!(activities)
 end
+
+user1 = User.find_or_create_by!(name:"Bob", email: "bobTodd@yahoo.com")
+activities1 = Activity.find_or_create_by!(ActivityName: "Test1", Description: "test test", ActivityType: "2")
+
+ActivityEvent.find_or_create_by!(
+    due_date: "12-Aug-1934",
+    is_completed: 'false',
+    user: user1,
+    activity: activities1
+)
+
+
+  
+    # t.datetime "due_date"
+    # t.boolean "is_completed"
+    # t.datetime "created_at", null: false
+    # t.datetime "updated_at", null: false
+    # t.integer "user_id", null: false
+    # t.integer "activity_id", null: false
+    # t.index ["activity_id"], name: "index_activity_events_on_activity_id"
+    # t.index ["user_id"], name: "index_activity_events_on_user_id"

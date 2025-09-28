@@ -10,7 +10,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema[8.0].define(version: 2025_09_28_041730) do
+ActiveRecord::Schema[8.0].define(version: 2025_09_28_051839) do
   create_table "activities", force: :cascade do |t|
     t.string "ActivityName"
     t.text "Description"
@@ -20,7 +20,6 @@ ActiveRecord::Schema[8.0].define(version: 2025_09_28_041730) do
   end
 
   create_table "activity_events", force: :cascade do |t|
-    t.integer "ActivyID"
     t.datetime "due_date"
     t.boolean "is_completed"
     t.datetime "created_at", null: false
