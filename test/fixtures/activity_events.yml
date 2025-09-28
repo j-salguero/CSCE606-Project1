@@ -1,0 +1,11 @@
+# Read about fixtures at https://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  ActivyID: 1
+  due_date: 2025-09-27 21:56:15
+  is_completed: false
+
+two:
+  ActivyID: 1
+  due_date: 2025-09-27 21:56:15
+  is_completed: false
