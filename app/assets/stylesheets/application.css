@@ -46,3 +46,11 @@ table, th, td {
 .today-cell {
     background-color: greenyellow;
 }
+
+.site-header {
+    text-align: center;
+}
+
+.site-footer {
+    text-align: center;
+}
