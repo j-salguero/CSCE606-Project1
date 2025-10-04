@@ -1,0 +1,16 @@
+<% content_for :title, "Editing activity" %>
+
+<h1>Editing activity</h1>
+
+<%= render "form", activity: @activity %>
+
+<br>
+
+<div>
+  <%= link_to "Show this activity", @activity %> |
+  <%= link_to "Back to activities", activities_path %>
+</div>
+<div class="link-text">
+  <%= link_to "Back to activity events", activity_events_path %>
+</div>
+
