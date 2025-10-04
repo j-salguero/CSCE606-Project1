@@ -1,12 +1,20 @@
 <%= turbo_frame_tag "modal" do %>
 	<div class="modal">
 
-	<%= render @activity_event %>
+		<%= render @activity_event %>
 
-	<div>
-	<%= link_to "Edit this activity event", edit_activity_event_path(@activity_event), class: "cancel-button" %>
-	<%= button_to "Destroy this activity event", @activity_event, method: :delete, class: "cancel-button", data: { turbo_frame: "_top" }   %>
-	<%= link_to "Close", activity_events_path, class: "cancel-button", data: { turbo_frame: "_top" } %>  
-	</div>
+		<table class="table_i">
+			<tr class="tr_i">
+				<td class="td_i">
+			<%= link_to "Edit", edit_activity_event_path(@activity_event), class: "cancel-button" %>
+			<%= button_to "Delete", @activity_event, method: :delete, class: "cancel-button", data: { turbo_frame: "_top" } %>
+				</td>
+			</tr>
+			<tr class="tr_i">
+				<td class="td_i">
+			<%= link_to "Events", activity_events_path, class: "cancel-button", data: { turbo_frame: "_top" } %>  
+				</td>
+			</tr>
+		</table>
 	</div>
 <% end %>

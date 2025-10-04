@@ -41,6 +41,11 @@
     box-shadow: 0 0 10px 0 rgba(0,0,0,0.2), 0 5px 10px 0 rgba(0,0,0,0.19);
 }
 
+/* Example for individual buttons if not using flexbox on parent */
+.button-container button {
+  display: inline-block;
+}
+
 .cancel-button {
     background-color: #6c4f83;
     font-size: 12px;
@@ -49,7 +54,6 @@
     border: none;
     border-radius: 4px;
     cursor: pointer;  
-	float: left;
  	margin: 4px 2px;
     text-decoration: none;
 }
@@ -75,6 +79,11 @@
 
 table, th, td {
     border: 1px solid black
+}
+
+
+.table_i, .th_i, .td_i {
+    border: 0px solid rgba(255, 255, 255, 0)
 }
 
 .today-cell {

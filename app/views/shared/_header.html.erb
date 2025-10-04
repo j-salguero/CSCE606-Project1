@@ -5,7 +5,7 @@
       <%= link_to "Home", root_path %> |
       <%= link_to "New User", new_user_path %> |
       <%= link_to "New Database Activity", new_activity_path %> |
-      <%= link_to "New Activity Event", new_activity_event_path %>
+	  <%= link_to "New activity event", new_activity_event_path, data: { turbo_frame: "modal" } %>
     </nav>
   </div>
 </header>

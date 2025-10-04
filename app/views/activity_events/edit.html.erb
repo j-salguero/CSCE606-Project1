@@ -6,9 +6,17 @@
 	
 		<br>
 	
-		<div>
+		<table class="table_i">
+			<tr class="tr_i">
+				<td class="td_i">
 		  <%= link_to "View", @activity_event, class: "cancel-button" %>  
-		  <%= link_to "Close", activity_events_path, class: "cancel-button", data: { turbo_frame: "_top" } %>  
-		</div>
+				</td>
+			</tr>
+			<tr class="tr_i">
+				<td class="td_i">
+			<%= link_to "Events", activity_events_path, class: "cancel-button", data: { turbo_frame: "_top" }  %>
+				</td>
+			</tr>
+		</table>
 	</div>
 <% end %>
