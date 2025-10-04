@@ -1,0 +1,33 @@
+<%= form_with(model: activity) do |form| %>
+  <% if activity.errors.any? %>
+    <div style="color: red">
+      <h2><%= pluralize(activity.errors.count, "error") %> prohibited this activity from being saved:</h2>
+
+      <ul>
+        <% activity.errors.each do |error| %>
+          <li><%= error.full_message %></li>
+        <% end %>
+      </ul>
+    </div>
+  <% end %>
+
+  <div>
+    <%= form.label :ActivityName, style: "display: block" %>
+    <%= form.text_field :ActivityName %>
+  </div>
+
+  <div>
+    <%= form.label :Description, style: "display: block" %>
+    <%= form.text_field :Description %>
+  </div>
+
+  <div>
+    <%= form.label :ActivityType, style: "display: block" %>
+    <%= form.select :ActivityType, @activity_for_dropdown %>
+  </div>
+
+
+  <div>
+    <%= form.submit %>
+  </div>
+<% end %>

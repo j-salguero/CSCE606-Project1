@@ -35,43 +35,43 @@
 	  <!-- Monday -->
       <td class="<%= 'today-cell' if mon_date == Date.current %>">
   		<% @activity_events_Mon_TD.each do |activityEvent| %>
-    		<div> <%= link_to  activityEvent.activity.ActivityName, activityEvent %></div>
+    		<%= link_to  activityEvent.activity.ActivityName, activityEvent %><br />
   		<% end %>
 	  </td>
 	  <!-- Tuesday -->
       <td class="<%= 'today-cell' if tue_date == Date.current %>">
   		<% @activity_events_Tue_TD.each do |activityEvent| %>
-    		<div> <%= link_to  activityEvent.activity.ActivityName, activityEvent %></div>
+    		<%= link_to  activityEvent.activity.ActivityName, activityEvent %>< br />
   		<% end %>
 	  </td>
 	  <!-- Wednesday -->
       <td class="<%= 'today-cell' if wed_date == Date.current %>">
   		<% @activity_events_Wed_TD.each do |activityEvent| %>
-    		<div> <%= link_to  activityEvent.activity.ActivityName, activityEvent %></div>
+    		<%= link_to  activityEvent.activity.ActivityName, activityEvent %><br />
   		<% end %>
 	  </td>
 	  <!-- Thursday -->
       <td class="<%= 'today-cell' if thu_date == Date.current %>">
   		<% @activity_events_Thr_TD.each do |activityEvent| %>
-    		<div> <%= link_to  activityEvent.activity.ActivityName, activityEvent %></div>
+    		<%= link_to  activityEvent.activity.ActivityName, activityEvent %><br />
   		<% end %>
 	  </td>
 	  <!-- Friday -->
       <td class="<%= 'today-cell' if fri_date == Date.current %>">
   		<% @activity_events_Fri_TD.each do |activityEvent| %>
-    		<div> <%= link_to  activityEvent.activity.ActivityName, activityEvent %></div>
+    		<%= link_to  activityEvent.activity.ActivityName, activityEvent %><br />
   		<% end %>
 	  </td>
 	  <!-- Saturday -->
       <td class="<%= 'today-cell' if sat_date == Date.current %>">
   		<% @activity_events_Sat_TD.each do |activityEvent| %>
-    		<td> <%= link_to  activityEvent.activity.ActivityName, activityEvent %></td>
+    		<%= link_to  activityEvent.activity.ActivityName, activityEvent %><br />
   		<% end %>
 	  </td>
 	  <!-- Sunday -->
       <td class="<%= 'today-cell' if sun_date == Date.current %>">
   		<% @activity_events_Sun_TD.each do |activityEvent| %>
-    		<div> <%= link_to  activityEvent.activity.ActivityName, activityEvent %></div>
+    		<%= link_to  activityEvent.activity.ActivityName, activityEvent %><br />
   		<% end %>
 	  </td>
     </tr>
@@ -81,43 +81,43 @@
 	  <!-- Monday -->
       <td class="<%= 'today-cell' if mon_date == Date.current %>">
   		<% @activity_events_Mon_Dn.each do |activityEvent| %>
-    		<div> <%= link_to  activityEvent.activity.ActivityName, activityEvent %></div>
+    		<%= link_to  activityEvent.activity.ActivityName, activityEvent %><br />
   		<% end %>
 	  </td>
 	  <!-- Tuesday -->
       <td class="<%= 'today-cell' if tue_date == Date.current %>">
   		<% @activity_events_Tue_Dn.each do |activityEvent| %>
-    		<div> <%= link_to  activityEvent.activity.ActivityName, activityEvent %></div>
+    		<%= link_to  activityEvent.activity.ActivityName, activityEvent %><br />
   		<% end %>
 	  </td>
 	  <!-- Wednesday -->
       <td class="<%= 'today-cell' if wed_date == Date.current %>">
   		<% @activity_events_Wed_Dn.each do |activityEvent| %>
-    		<div> <%= link_to  activityEvent.activity.ActivityName, activityEvent %></div>
+    		<%= link_to  activityEvent.activity.ActivityName, activityEvent %><br />
   		<% end %>
 	  </td>
 	  <!-- Thursday -->
       <td class="<%= 'today-cell' if thu_date == Date.current %>">
   		<% @activity_events_Thr_Dn.each do |activityEvent| %>
-    		<div> <%= link_to  activityEvent.activity.ActivityName, activityEvent %></div>
+    		<%= link_to  activityEvent.activity.ActivityName, activityEvent %><br />
   		<% end %>
 	  </td>
 	  <!-- Friday -->
       <td class="<%= 'today-cell' if fri_date == Date.current %>">
   		<% @activity_events_Fri_Dn.each do |activityEvent| %>
-    		<div> <%= link_to  activityEvent.activity.ActivityName, activityEvent %></div>
+    		<%= link_to  activityEvent.activity.ActivityName, activityEvent %><br />
   		<% end %>
 	  </td>
 	  <!-- Saturday -->
       <td class="<%= 'today-cell' if sat_date == Date.current %>">
   		<% @activity_events_Sat_Dn.each do |activityEvent| %>
-    		<div> <%= link_to  activityEvent.activity.ActivityName, activityEvent %></div>
+    		<%= link_to  activityEvent.activity.ActivityName, activityEvent %><br />
   		<% end %>
 	  </td>
 	  <!-- Sunday -->
       <td class="<%= 'today-cell' if sun_date == Date.current %>">
   		<% @activity_events_Sun_Dn.each do |activityEvent| %>
-    		<div> <%= link_to  activityEvent.activity.ActivityName, activityEvent %></div>
+    		<%= link_to  activityEvent.activity.ActivityName, activityEvent %><br />
   		<% end %>
 	  </td>
     </tr>
@@ -131,3 +131,5 @@
 <div class="link-text">
   <%= link_to "New activity event", new_activity_event_path %>
 </div>
+<%= link_to "New activity", new_activity_path %>
+<%= link_to "New user", new_user_path %>
