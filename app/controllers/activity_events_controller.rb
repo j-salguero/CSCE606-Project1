@@ -33,6 +33,7 @@ class ActivityEventsController < ApplicationController
     @activity_name = @activity.ActivityName
     @user= User.find{ |user| user.id == @activity_event.user_id }
     @user_name = @user.name
+    @acitivy_description = @activity.Description
   end
 
   # GET /activity_events/new
