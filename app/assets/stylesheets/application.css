@@ -8,3 +8,37 @@
  *
  * Consider organizing styles into separate files for maintainability.
  */
+
+ .grid {
+    margin-left: auto;
+    margin-right: auto;
+    border: 2px solid black;
+    background-color: rgb(235, 230, 239); 
+    border-radius: 12px;   
+    table-layout: fixed;
+}
+
+.grid th,
+.grid td {
+  /* border: 1px solid gray; */
+    width: 12.5%; 
+}
+
+.text-title {
+    text-align: center;
+}
+
+.category {
+    padding-top: 15px;
+    padding-bottom: 15px;
+}
+
+.link-text{
+    text-align: center;
+    padding-top: 15px;
+    padding-bottom: 15px;
+}
+
+table, th, td {
+    border: 1px solid black
+}
