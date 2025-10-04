@@ -30,10 +30,6 @@
     <%= form.label :updated_at, style: "display: block" %>
     <%= form.date_field :updated_at %>
   </div>
-  <div>
-    <%= form.label :Description, style: "display: block" %>
-    <%= form.text_field :Description %>
-  </div>
 
   <div>
     <%= form.label :user_id, style: "display: block" %>
@@ -43,6 +39,11 @@
   <div>
     <%= form.label :activity_id, style: "display: block" %>
 	<%= form.select :activity_id, @activities_for_dropdown%>
+  </div>
+  
+  <div>
+    <%= form.label :description, style: "display: block" %>
+    <%= form.text_field :description %>
   </div>
 
 
