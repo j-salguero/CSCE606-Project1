@@ -1,0 +1,24 @@
+current directory: /home/djp/CSCE606-Project1/vendor/bundle/ruby/3.4.0/gems/date-3.4.1/ext/date
+/home/djp/.rbenv/versions/3.4.5/bin/ruby extconf.rb
+checking for rb_category_warn()... yes
+checking for timezone in time.h with -Werror... yes
+checking for altzone in time.h with -Werror... no
+creating Makefile
+
+current directory: /home/djp/CSCE606-Project1/vendor/bundle/ruby/3.4.0/gems/date-3.4.1/ext/date
+make DESTDIR\= sitearchdir\=./.gem.20251004-422653-zcphpy sitelibdir\=./.gem.20251004-422653-zcphpy clean
+
+current directory: /home/djp/CSCE606-Project1/vendor/bundle/ruby/3.4.0/gems/date-3.4.1/ext/date
+make DESTDIR\= sitearchdir\=./.gem.20251004-422653-zcphpy sitelibdir\=./.gem.20251004-422653-zcphpy
+compiling date_core.c
+compiling date_parse.c
+compiling date_strftime.c
+compiling date_strptime.c
+linking shared-object date_core.so
+
+current directory: /home/djp/CSCE606-Project1/vendor/bundle/ruby/3.4.0/gems/date-3.4.1/ext/date
+make DESTDIR\= sitearchdir\=./.gem.20251004-422653-zcphpy sitelibdir\=./.gem.20251004-422653-zcphpy install
+/usr/bin/install -c -m 0755 date_core.so ./.gem.20251004-422653-zcphpy
+
+current directory: /home/djp/CSCE606-Project1/vendor/bundle/ruby/3.4.0/gems/date-3.4.1/ext/date
+make DESTDIR\= sitearchdir\=./.gem.20251004-422653-zcphpy sitelibdir\=./.gem.20251004-422653-zcphpy clean

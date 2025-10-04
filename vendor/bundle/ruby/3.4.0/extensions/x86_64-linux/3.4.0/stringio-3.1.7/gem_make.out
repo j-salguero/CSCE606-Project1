@@ -1,0 +1,19 @@
+current directory: /home/djp/CSCE606-Project1/vendor/bundle/ruby/3.4.0/gems/stringio-3.1.7/ext/stringio
+/home/djp/.rbenv/versions/3.4.5/bin/ruby extconf.rb
+checking for rb_io_mode_t in ruby/io.h... no
+creating Makefile
+
+current directory: /home/djp/CSCE606-Project1/vendor/bundle/ruby/3.4.0/gems/stringio-3.1.7/ext/stringio
+make DESTDIR\= sitearchdir\=./.gem.20251004-422653-ce3h2g sitelibdir\=./.gem.20251004-422653-ce3h2g clean
+
+current directory: /home/djp/CSCE606-Project1/vendor/bundle/ruby/3.4.0/gems/stringio-3.1.7/ext/stringio
+make DESTDIR\= sitearchdir\=./.gem.20251004-422653-ce3h2g sitelibdir\=./.gem.20251004-422653-ce3h2g
+compiling stringio.c
+linking shared-object stringio.so
+
+current directory: /home/djp/CSCE606-Project1/vendor/bundle/ruby/3.4.0/gems/stringio-3.1.7/ext/stringio
+make DESTDIR\= sitearchdir\=./.gem.20251004-422653-ce3h2g sitelibdir\=./.gem.20251004-422653-ce3h2g install
+/usr/bin/install -c -m 0755 stringio.so ./.gem.20251004-422653-ce3h2g
+
+current directory: /home/djp/CSCE606-Project1/vendor/bundle/ruby/3.4.0/gems/stringio-3.1.7/ext/stringio
+make DESTDIR\= sitearchdir\=./.gem.20251004-422653-ce3h2g sitelibdir\=./.gem.20251004-422653-ce3h2g clean
