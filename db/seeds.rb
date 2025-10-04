@@ -121,7 +121,10 @@ activities = [
   { name: "Trip Planning", type: 10, description: "Researching and organizing travel logistics." },
   { name: "Packing", type: 10, description: "Preparing items for a trip or move." },
   { name: "Traveling", type: 10, description: "Being in transit by car, train, plane, etc." },
-  { name: "Exploring / Sightseeing", type: 10, description: "Visiting places or attractions during travel." }
+  { name: "Exploring / Sightseeing", type: 10, description: "Visiting places or attractions during travel." },
+  
+  #other  
+  { name: "Other", type: 11, description: "Custom created user activity" }
 ]
 
 activities.each do |activity|
