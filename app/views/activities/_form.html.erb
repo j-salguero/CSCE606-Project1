@@ -23,8 +23,9 @@
 
   <div>
     <%= form.label :ActivityType, style: "display: block" %>
-    <%= form.text_field :ActivityType %>
+    <%= form.select :ActivityType, @activity_for_dropdown %>
   </div>
+
 
   <div>
     <%= form.submit %>

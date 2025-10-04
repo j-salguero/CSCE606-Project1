@@ -13,6 +13,7 @@ class ActivitiesController < ApplicationController
   # GET /activities/new
   def new
     @activity = Activity.new
+    @activity_for_dropdown = Activity.all.map { |activity| [activity.ActivityName, activity.id] } # Or any other desired attributes
   end
 
   # GET /activities/1/edit
