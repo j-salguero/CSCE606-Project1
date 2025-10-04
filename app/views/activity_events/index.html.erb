@@ -2,9 +2,11 @@
 
 <% content_for :title, "Activity events" %>
 
-<h1>Activity events</h1>
+<div class="text-title">
+  <h1>Activity events</h1>
+</div>
 
-<table>
+<table class="grid">
   <thead>
     <tr>
       <th></th>
@@ -20,95 +22,93 @@
 
   <tbody>
     <tr>
-      <td>To Do</td>
+      <td class="category">To Do</td>
 	  <!-- Monday -->
       <td>
   		<% @activity_events_Mon_TD.each do |activityEvent| %>
-    		<td> <%= link_to  activityEvent.id, activityEvent %></td>
+    		<td> <%= link_to  activityEvent.activity.ActivityName, activityEvent %></td>
   		<% end %>
 	  </td>
 	  <!-- Tuesday -->
       <td>
   		<% @activity_events_Tue_TD.each do |activityEvent| %>
-    		<td> <%= link_to  activityEvent.id, activityEvent %></td>
+    		<td> <%= link_to  activityEvent.activity.ActivityName, activityEvent %></td>
   		<% end %>
 	  </td>
 	  <!-- Wednesday -->
       <td>
   		<% @activity_events_Wed_TD.each do |activityEvent| %>
-    		<td> <%= link_to  activityEvent.id, activityEvent %></td>
+    		<td> <%= link_to  activityEvent.activity.ActivityName, activityEvent %></td>
   		<% end %>
 	  </td>
 	  <!-- Thursday -->
       <td>
   		<% @activity_events_Thr_TD.each do |activityEvent| %>
-    		<td> <%= link_to  activityEvent.id, activityEvent %></td>
+    		<td> <%= link_to  activityEvent.activity.ActivityName, activityEvent %></td>
   		<% end %>
 	  </td>
 	  <!-- Friday -->
       <td>
   		<% @activity_events_Fri_TD.each do |activityEvent| %>
-    		<td> <%= link_to  activityEvent.id, activityEvent %></td>
+    		<td> <%= link_to  activityEvent.activity.ActivityName, activityEvent %></td>
   		<% end %>
 	  </td>
 	  <!-- Saturday -->
       <td>
   		<% @activity_events_Sat_TD.each do |activityEvent| %>
-    		<td> <%= link_to  activityEvent.id, activityEvent %></td>
+    		<td> <%= link_to  activityEvent.activity.ActivityName, activityEvent %></td>
   		<% end %>
 	  </td>
 	  <!-- Sunday -->
       <td>
   		<% @activity_events_Sun_TD.each do |activityEvent| %>
-    		<td> <%= link_to  activityEvent.id, activityEvent %>></td>
+    		<td> <%= link_to  activityEvent.activity.ActivityName, activityEvent %>></td>
   		<% end %>
 	  </td>
     </tr>
+    <!-- In Progress -->
     <tr>
-      <td>In Progress</td>
-    </tr>
-    <tr>
-      <td>Done</td>
+      <td class="category">Done</td>
 	  <!-- Monday -->
       <td>
   		<% @activity_events_Mon_Dn.each do |activityEvent| %>
-    		<td> <%= link_to  activityEvent.id, activityEvent %></td>
+    		<td> <%= link_to  activityEvent.activity.ActivityName, activityEvent %></td>
   		<% end %>
 	  </td>
 	  <!-- Tuesday -->
       <td>
   		<% @activity_events_Tue_Dn.each do |activityEvent| %>
-    		<td> <%= link_to  activityEvent.id, activityEvent %></td>
+    		<td> <%= link_to  activityEvent.activity.ActivityName, activityEvent %></td>
   		<% end %>
 	  </td>
 	  <!-- Wednesday -->
       <td>
   		<% @activity_events_Wed_Dn.each do |activityEvent| %>
-    		<td> <%= link_to  activityEvent.id, activityEvent %></td>
+    		<td> <%= link_to  activityEvent.activity.ActivityName, activityEvent %></td>
   		<% end %>
 	  </td>
 	  <!-- Thursday -->
       <td>
   		<% @activity_events_Thr_Dn.each do |activityEvent| %>
-    		<td> <%= link_to  activityEvent.id, activityEvent %></td>
+    		<td> <%= link_to  activityEvent.activity.ActivityName, activityEvent %></td>
   		<% end %>
 	  </td>
 	  <!-- Friday -->
       <td>
   		<% @activity_events_Fri_Dn.each do |activityEvent| %>
-    		<td> <%= link_to  activityEvent.id, activityEvent %></td>
+    		<td> <%= link_to  activityEvent.activity.ActivityName, activityEvent %></td>
   		<% end %>
 	  </td>
 	  <!-- Saturday -->
       <td>
   		<% @activity_events_Sat_Dn.each do |activityEvent| %>
-    		<td> <%= link_to  activityEvent.id, activityEvent %></td>
+    		<td> <%= link_to  activityEvent.activity.ActivityName, activityEvent %></td>
   		<% end %>
 	  </td>
 	  <!-- Sunday -->
       <td>
   		<% @activity_events_Sun_Dn.each do |activityEvent| %>
-    		<td> <%= link_to  activityEvent.id, activityEvent %></td>
+    		<td> <%= link_to  activityEvent.activity.ActivityName, activityEvent %></td>
   		<% end %>
 	  </td>
     </tr>
@@ -119,5 +119,6 @@
   </tfoot>
 </table>
 
-
-<%= link_to "New activity event", new_activity_event_path %>
+<div class="link-text">
+  <%= link_to "New activity event", new_activity_event_path %>
+</div>
