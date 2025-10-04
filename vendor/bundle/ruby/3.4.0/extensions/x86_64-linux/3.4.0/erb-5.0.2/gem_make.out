@@ -1,0 +1,19 @@
+current directory: /home/djp/CSCE606-Project1/vendor/bundle/ruby/3.4.0/gems/erb-5.0.2/ext/erb/escape
+/home/djp/.rbenv/versions/3.4.5/bin/ruby extconf.rb
+checking for rb_ext_ractor_safe() in ruby.h... yes
+creating Makefile
+
+current directory: /home/djp/CSCE606-Project1/vendor/bundle/ruby/3.4.0/gems/erb-5.0.2/ext/erb/escape
+make DESTDIR\= sitearchdir\=./.gem.20251004-422653-e1duzb sitelibdir\=./.gem.20251004-422653-e1duzb clean
+
+current directory: /home/djp/CSCE606-Project1/vendor/bundle/ruby/3.4.0/gems/erb-5.0.2/ext/erb/escape
+make DESTDIR\= sitearchdir\=./.gem.20251004-422653-e1duzb sitelibdir\=./.gem.20251004-422653-e1duzb
+compiling escape.c
+linking shared-object erb/escape.so
+
+current directory: /home/djp/CSCE606-Project1/vendor/bundle/ruby/3.4.0/gems/erb-5.0.2/ext/erb/escape
+make DESTDIR\= sitearchdir\=./.gem.20251004-422653-e1duzb sitelibdir\=./.gem.20251004-422653-e1duzb install
+/usr/bin/install -c -m 0755 escape.so ./.gem.20251004-422653-e1duzb/erb
+
+current directory: /home/djp/CSCE606-Project1/vendor/bundle/ruby/3.4.0/gems/erb-5.0.2/ext/erb/escape
+make DESTDIR\= sitearchdir\=./.gem.20251004-422653-e1duzb sitelibdir\=./.gem.20251004-422653-e1duzb clean

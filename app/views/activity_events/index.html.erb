@@ -35,43 +35,43 @@
 	  <!-- Monday -->
       <td class="<%= 'today-cell' if mon_date == Date.current %>">
   		<% @activity_events_Mon_TD.each do |activityEvent| %>
-    		<%= link_to  activityEvent.activity.ActivityName, activityEvent %><br />
+    		<div> <%= link_to  activityEvent.activity.ActivityName, activityEvent, data: { turbo_frame: "modal" } %></div>
   		<% end %>
 	  </td>
 	  <!-- Tuesday -->
       <td class="<%= 'today-cell' if tue_date == Date.current %>">
   		<% @activity_events_Tue_TD.each do |activityEvent| %>
-    		<%= link_to  activityEvent.activity.ActivityName, activityEvent %>< br />
+    		<div> <%= link_to  activityEvent.activity.ActivityName, activityEvent, data: { turbo_frame: "modal" } %></div>
   		<% end %>
 	  </td>
 	  <!-- Wednesday -->
       <td class="<%= 'today-cell' if wed_date == Date.current %>">
   		<% @activity_events_Wed_TD.each do |activityEvent| %>
-    		<%= link_to  activityEvent.activity.ActivityName, activityEvent %><br />
+    		<div> <%= link_to  activityEvent.activity.ActivityName, activityEvent, data: { turbo_frame: "modal" } %></div>
   		<% end %>
 	  </td>
 	  <!-- Thursday -->
       <td class="<%= 'today-cell' if thu_date == Date.current %>">
   		<% @activity_events_Thr_TD.each do |activityEvent| %>
-    		<%= link_to  activityEvent.activity.ActivityName, activityEvent %><br />
+    		<div> <%= link_to  activityEvent.activity.ActivityName, activityEvent, data: { turbo_frame: "modal" } %></div>
   		<% end %>
 	  </td>
 	  <!-- Friday -->
       <td class="<%= 'today-cell' if fri_date == Date.current %>">
   		<% @activity_events_Fri_TD.each do |activityEvent| %>
-    		<%= link_to  activityEvent.activity.ActivityName, activityEvent %><br />
+    		<div> <%= link_to  activityEvent.activity.ActivityName, activityEvent, data: { turbo_frame: "modal" } %></div>
   		<% end %>
 	  </td>
 	  <!-- Saturday -->
       <td class="<%= 'today-cell' if sat_date == Date.current %>">
   		<% @activity_events_Sat_TD.each do |activityEvent| %>
-    		<%= link_to  activityEvent.activity.ActivityName, activityEvent %><br />
+    		<td> <%= link_to  activityEvent.activity.ActivityName, activityEvent, data: { turbo_frame: "modal" } %></td>
   		<% end %>
 	  </td>
 	  <!-- Sunday -->
       <td class="<%= 'today-cell' if sun_date == Date.current %>">
   		<% @activity_events_Sun_TD.each do |activityEvent| %>
-    		<%= link_to  activityEvent.activity.ActivityName, activityEvent %><br />
+    		<div> <%= link_to  activityEvent.activity.ActivityName, activityEvent, data: { turbo_frame: "modal" } %></div>
   		<% end %>
 	  </td>
     </tr>
@@ -81,43 +81,43 @@
 	  <!-- Monday -->
       <td class="<%= 'today-cell' if mon_date == Date.current %>">
   		<% @activity_events_Mon_Dn.each do |activityEvent| %>
-    		<%= link_to  activityEvent.activity.ActivityName, activityEvent %><br />
+    		<div> <%= link_to  activityEvent.activity.ActivityName, activityEvent, data: { turbo_frame: "modal" } %></div>
   		<% end %>
 	  </td>
 	  <!-- Tuesday -->
       <td class="<%= 'today-cell' if tue_date == Date.current %>">
   		<% @activity_events_Tue_Dn.each do |activityEvent| %>
-    		<%= link_to  activityEvent.activity.ActivityName, activityEvent %><br />
+    		<div> <%= link_to  activityEvent.activity.ActivityName, activityEvent, data: { turbo_frame: "modal" } %></div>
   		<% end %>
 	  </td>
 	  <!-- Wednesday -->
       <td class="<%= 'today-cell' if wed_date == Date.current %>">
   		<% @activity_events_Wed_Dn.each do |activityEvent| %>
-    		<%= link_to  activityEvent.activity.ActivityName, activityEvent %><br />
+    		<div> <%= link_to  activityEvent.activity.ActivityName, activityEvent, data: { turbo_frame: "modal" } %></div>
   		<% end %>
 	  </td>
 	  <!-- Thursday -->
       <td class="<%= 'today-cell' if thu_date == Date.current %>">
   		<% @activity_events_Thr_Dn.each do |activityEvent| %>
-    		<%= link_to  activityEvent.activity.ActivityName, activityEvent %><br />
+    		<div> <%= link_to  activityEvent.activity.ActivityName, activityEvent, data: { turbo_frame: "modal" } %></div>
   		<% end %>
 	  </td>
 	  <!-- Friday -->
       <td class="<%= 'today-cell' if fri_date == Date.current %>">
   		<% @activity_events_Fri_Dn.each do |activityEvent| %>
-    		<%= link_to  activityEvent.activity.ActivityName, activityEvent %><br />
+    		<div> <%= link_to  activityEvent.activity.ActivityName, activityEvent, data: { turbo_frame: "modal" } %></div>
   		<% end %>
 	  </td>
 	  <!-- Saturday -->
       <td class="<%= 'today-cell' if sat_date == Date.current %>">
   		<% @activity_events_Sat_Dn.each do |activityEvent| %>
-    		<%= link_to  activityEvent.activity.ActivityName, activityEvent %><br />
+    		<div> <%= link_to  activityEvent.activity.ActivityName, activityEvent, data: { turbo_frame: "modal" } %></div>
   		<% end %>
 	  </td>
 	  <!-- Sunday -->
       <td class="<%= 'today-cell' if sun_date == Date.current %>">
   		<% @activity_events_Sun_Dn.each do |activityEvent| %>
-    		<%= link_to  activityEvent.activity.ActivityName, activityEvent %><br />
+    		<div> <%= link_to  activityEvent.activity.ActivityName, activityEvent, data: { turbo_frame: "modal" } %></div>
   		<% end %>
 	  </td>
     </tr>
@@ -127,3 +127,5 @@
   <tfoot>
   </tfoot>
 </table>
+
+<%= link_to "New activity event", new_activity_event_path, data: { turbo_frame: "modal" } %>
