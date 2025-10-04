@@ -33,6 +33,7 @@ class ActivityEventsController < ApplicationController
     @activity_name = @activity.ActivityName
     @user= User.find{ |user| user.id == @activity_event.user_id }
     @user_name = @user.name
+    # @acitivy_description = @activity.Description
   end
 
   # GET /activity_events/new
@@ -94,6 +95,6 @@ class ActivityEventsController < ApplicationController
 
     # Only allow a list of trusted parameters through.
     def activity_event_params
-      params.expect(activity_event: [ :due_date, :is_completed, :created_at, :updated_at, :user_id, :activity_id ])
+      params.expect(activity_event: [ :due_date, :is_completed, :created_at, :updated_at, :user_id, :activity_id, :description ])
     end
 end

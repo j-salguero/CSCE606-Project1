@@ -76,3 +76,15 @@
 table, th, td {
     border: 1px solid black
 }
+
+.today-cell {
+    background-color: greenyellow;
+}
+
+.site-header {
+    text-align: center;
+}
+
+.site-footer {
+    text-align: center;
+}

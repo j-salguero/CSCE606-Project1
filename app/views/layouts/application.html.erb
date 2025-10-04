@@ -28,5 +28,10 @@
   <body>
 <%= turbo_frame_tag "modal" %>
 <%= yield %>
+    <%= render "shared/header" %>
+
+    <%= yield %>
+
+    <%= render "shared/footer" %>
   </body>
 </html>
