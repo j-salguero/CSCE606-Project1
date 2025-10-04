@@ -1,16 +1,24 @@
-<% content_for :title, "Editing activity" %>
+<%= turbo_frame_tag "modal" do %>
+	<div class="modal">
+		<h1>Editing activity</h1>
 
-<h1>Editing activity</h1>
+		<%= render "form", activity: @activity %>
 
-<%= render "form", activity: @activity %>
+		<br>
 
-<br>
-
-<div>
-  <%= link_to "Show this activity", @activity %> |
-  <%= link_to "Back to activities", activities_path %>
-</div>
-<div class="link-text">
-  <%= link_to "Back to activity events", activity_events_path %>
-</div>
+		<table class="table_i">
+			<tr class="tr_i">
+				<td class="td_i">
+		  	<%= link_to "View", @activity, class: "cancel-button" %>
+				</td>
+			</tr>
+			<tr class="tr_i">
+				<td class="td_i">
+		  <%= link_to "Activities", activities_path, class: "cancel-button", data: { turbo_frame: "_top" }  %>
+		  <%= link_to "Events", activity_events_path, class: "cancel-button", data: { turbo_frame: "_top" }  %>
+				</td>
+			</tr>
+		</table>
+	</div>
+<% end %>
 

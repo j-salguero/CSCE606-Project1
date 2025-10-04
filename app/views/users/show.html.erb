@@ -1,13 +1,20 @@
-<p style="color: green"><%= notice %></p>
-
-<%= render @user %>
-
-<div>
-  <%= link_to "Edit this user", edit_user_path(@user) %> |
-  <%= link_to "Back to users", users_path %>
-
-  <%= button_to "Destroy this user", @user, method: :delete %>
-</div>
-<div class="link-text">
-  <%= link_to "Back to activity events", activity_events_path %>
-</div>
+<%= turbo_frame_tag "modal" do %>
+	<div class="modal">
+		<%= render @user %>
+		
+		<table class="table_i">
+			<tr class="tr_i">
+				<td class="td_i">
+		  <%= link_to "Edit", edit_user_path(@user), class: "cancel-button" %>
+		  <%= button_to "Delete", @user, method: :delete, class: "cancel-button", data: { turbo_frame: "_top" } %>
+				</td>
+			</tr>
+			<tr class="tr_i">
+				<td class="td_i">
+		  <%= link_to "Users", users_path, class: "cancel-button", data: { turbo_frame: "_top" }  %>
+		  <%= link_to "Events", activity_events_path, class: "cancel-button", data: { turbo_frame: "_top" }  %>
+				</td>
+			</tr>
+		</table>
+	</div>
+<% end %>
