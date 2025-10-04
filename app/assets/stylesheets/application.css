@@ -42,3 +42,7 @@
 table, th, td {
     border: 1px solid black
 }
+
+.today-cell {
+    background-color: greenyellow;
+}
