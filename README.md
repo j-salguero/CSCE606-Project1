@@ -1,24 +1,7 @@
 # README
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+*Habit Tracker* is a simple app that helps users keep track of their weekly activities and to-do items. The app can be downloaded and run locally, or can be deployed to Heroku.
 
-Things you may want to cover:
+Additional installation and deployment details can be found in the [Technical Documentation](https://github.com/j-salguero/CSCE606-Project1/blob/main/Documentation/Technical%20Document.md). Feature descriptions and usage instructions can be found in the [User Guide](https://github.com/j-salguero/CSCE606-Project1/blob/main/Documentation/HabitTracker_UserGuide.pdf) 
 
-* Ruby version
-
-* System dependencies
-
-* Configuration
-
-* Database creation
-
-* Database initialization
-
-* How to run the test suite
-
-* Services (job queues, cache servers, search engines, etc.)
-
-* Deployment instructions
-
-* ...
+The live Heroku deployment can be accessed here: https://p1-habittracker-g9-a26a7f38efe7.herokuapp.com/
